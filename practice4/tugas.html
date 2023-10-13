@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SC1_21102015_Nazwa Aulia Rakhma</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #feadb9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f8a19f;
+            color: #000000;
+            text-align: center;
+            padding: 10px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 16px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #f9e1e0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        button {
+            background-color: #eb4d7c;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SC1_21102015_Nazwa Aulia Rakhma</h1>
+    </header>
+    <div class="content">
+        <h2>Selamat datang di halaman web saya.</h2>
+        <p>Sebagai tugas keempat mata kuliah Pemrograman Web.</p>
+        <p>Ini merupakan halaman web yang menerapkan HTML, CSS, dan JavaScript.</p>
+
+        <h3>Silakan isi data berikut:</h3>
+        <label for="nama">Nama  :</label>
+        <input type="text" id="nama" placeholder="Masukkan Nama">
+        <br>
+        <label for="nim">NIM   :</label>
+        <input type="text" id="nim" placeholder="Masukkan NIM">
+        <br>
+        <label for="kelas">Kelas :</label>
+        <input type="text" id="kelas" placeholder="Masukkan Kelas">
+        <br>
+        <button onclick="submitData()">Submit</button>
+
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function submitData() {
+            const nama = document.getElementById("nama").value;
+            const nim = document.getElementById("nim").value;
+            const kelas = document.getElementById("kelas").value;
+            const result = `Nama  : ${nama}, NIM   : ${nim}, Kelas : ${kelas}`;
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>
